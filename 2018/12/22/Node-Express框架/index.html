@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>vue | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Vuejs导入文件和导出文件ES6标准发布后，module成为标准，标准的使用是以export指令导出接口，以import引入模块，但是在我们一贯的node模块中，我们采用的是CommonJS规范，使用require引入模块，使用module.exports导出接口。1234//导入文件var [变量名] = require(&amp;apos; [路径] &amp;apos;)//commonjs导出对象m">
+  <meta name="description" content="​">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue">
-<meta property="og:url" content="http://yoursite.com/2018/10/07/vuejs/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/12/22/Node-Express框架/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="使用Vuejs导入文件和导出文件ES6标准发布后，module成为标准，标准的使用是以export指令导出接口，以import引入模块，但是在我们一贯的node模块中，我们采用的是CommonJS规范，使用require引入模块，使用module.exports导出接口。1234//导入文件var [变量名] = require(&amp;apos; [路径] &amp;apos;)//commonjs导出对象m">
+<meta property="og:description" content="​">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-10T04:35:45.702Z">
+<meta property="og:updated_time" content="2018-12-22T12:56:38.249Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue">
-<meta name="twitter:description" content="使用Vuejs导入文件和导出文件ES6标准发布后，module成为标准，标准的使用是以export指令导出接口，以import引入模块，但是在我们一贯的node模块中，我们采用的是CommonJS规范，使用require引入模块，使用module.exports导出接口。1234//导入文件var [变量名] = require(&amp;apos; [路径] &amp;apos;)//commonjs导出对象m">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="​">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,51 +154,12 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vuejs" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Node-Express框架" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      vue
-    </h1>
-  
-
-        
-        <a href="/2018/10/07/vuejs/" class="archive-article-date">
-  	<time datetime="2018-10-06T22:26:41.457Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-07</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="使用Vuejs"><a href="#使用Vuejs" class="headerlink" title="使用Vuejs"></a>使用Vuejs</h2><h3 id="导入文件和导出文件"><a href="#导入文件和导出文件" class="headerlink" title="导入文件和导出文件"></a>导入文件和导出文件</h3><p>ES6标准发布后，module成为标准，标准的使用是以export指令导出接口，以import引入模块，但是在我们一贯的node模块中，我们采用的是CommonJS规范，使用require引入模块，使用module.exports导出接口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//导入文件</span><br><span class="line">var [变量名] = require(&apos; [路径] &apos;)</span><br><span class="line">//commonjs导出对象</span><br><span class="line">moducle.exports =  [变量名]</span><br></pre></td></tr></table></figure></p>
-<p>vue使用ES6的语法<a href="https://www.cnblogs.com/xiaotanke/p/7448383.html" target="_blank" rel="noopener">import</a>导入文件，import用于在一个模块中加载另一个含有export接口的模块。使用export方式对文件进行导出，在导入时要加{},export default则不需要<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//默认导出文件</span><br><span class="line">export default [变量名]</span><br><span class="line"></span><br><span class="line">//默认导入文件</span><br><span class="line">import [变量名称] from &apos;[文件名]&apos;</span><br><span class="line"></span><br><span class="line">------------------------------------------</span><br><span class="line"></span><br><span class="line">//声明式导出</span><br><span class="line">export var [变量1] = &apos;...&apos;</span><br><span class="line">export var [变量2] = &apos;...&apos;</span><br><span class="line">var [变量3] = &apos;...&apos;</span><br><span class="line">export &#123;[变量3]&#125;</span><br><span class="line"></span><br><span class="line">//声明式导入(按需加载)</span><br><span class="line">import &#123;[变量1],[变量2],[变量3]...&#125; from &apos;[路径]&apos;</span><br><span class="line"></span><br><span class="line">//默认式导入变量名称可以自定义，声明式导入名称必须对应导出所有的变量名</span><br></pre></td></tr></table></figure></p>
-<h3 id="单文件启动"><a href="#单文件启动" class="headerlink" title="单文件启动"></a>单文件启动</h3><p>把以<em>.vue结尾的文件通过webpack编译成</em>.js文件在浏览器运行</p>
-<h4 id="vue文件格式"><a href="#vue文件格式" class="headerlink" title="vue文件格式"></a>vue文件格式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//内容(只能有一个根节点)</span><br><span class="line">&lt;template&gt;&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">//js代码（按照export default&#123; --js代码-- &#125;的格式）</span><br><span class="line">&lt;script&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">//css样式(在&lt;style&gt;标签中添加scoped属性可以让其只在template标签中生效)</span><br><span class="line">&lt;style&gt;&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">#### webpack依赖</span><br><span class="line">以webpack编译单文件启动依赖于vue-loader --&gt; veu-template-compiler --&gt; vue</span><br><span class="line"></span><br><span class="line">### 创建实例</span><br></pre></td></tr></table></figure>
-<p>new Vue({<br>    el : “ [DOM元素] “,<br>    data:{<br>        —使用的变量—<br>    }<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 选项使用</span><br><span class="line">##### el：[官方介绍](https://cn.vuejs.org/v2/api/#el)</span><br><span class="line">类型：string | HTMLElement</span><br><span class="line">介绍：提供一个在页面上已存在的 DOM 元素作为 Vue 实例的挂载目标。可以是 CSS 选择器，也可以是一个 HTMLElement 实例。</span><br><span class="line">##### data:[官方介绍](https://cn.vuejs.org/v2/api/#data)</span><br><span class="line">类型：Object | Function</span><br><span class="line">例子：</span><br></pre></td></tr></table></figure></p>
-<p>var data = { a: 1 }</p>
-<p>// 直接创建一个实例<br>var vm = new Vue({<br>  data: data<br>})<br>vm.a                 // =&gt; 1<br>vm.$data === data         // =&gt; true</p>
-<p>// Vue.extend() 中 data 必须是函数<br>var Component = Vue.extend({<br>  data: function () {<br>    return { a: 1 }<br>  }<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">##### render:[官方介绍](https://cn.vuejs.org/v2/guide/render-function.html)</span><br><span class="line">类型：(createElement: () =&gt; VNode) =&gt; VNode</span><br><span class="line">[渲染函数](https://cn.vuejs.org/v2/guide/render-function.html)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### vue使用</span><br><span class="line">##### [指令](https://cn.vuejs.org/v2/api/#指令)</span><br><span class="line">[v-text](https://cn.vuejs.org/v2/api/#v-text) : 等同于innerText,只能在双标签当中使用</span><br><span class="line">[v-html](https://cn.vuejs.org/v2/api/#v-html) : 等同与innerHTML,中间不能包含vuejs使用的变量</span><br><span class="line">[v-if](https://cn.vuejs.org/v2/api/#v-if) : 通过变量的布尔值来添加或删除元素</span><br><span class="line">[v-show](https://cn.vuejs.org/v2/api/#v-show) : 通过变量的布尔值为标签添加CSS(display:none)样式让元素隐藏和显示</span><br><span class="line">[v-model](https://cn.vuejs.org/v2/api/#v-model) : 双向数据绑定</span><br><span class="line">[v-bind](https://cn.vuejs.org/v2/api/#v-bind) : 单向数据绑定，可以简写为 :</span><br><span class="line"></span><br><span class="line">#### [class样式](https://cn.vuejs.org/v2/guide/class-and-style.html)</span><br><span class="line">1. 添加单个样式(通过三目运算添加样式)</span><br><span class="line">2. 通过  &#123;&apos;样式名A&apos;:&apos;true/false&apos;,&apos;样式名B&apos;:&apos;true/false&apos;，...&#125;  来添加删除多个样式</span><br><span class="line">3. 以 &#123;&apos;变量的值A&apos;:&apos;样式名1&apos;,&apos;变量的值B&apos;:&apos;样式名2&apos;&#125;[变量]  的方式为同一组数据添加不同的样式</span><br></pre></td></tr></table></figure></p>
-<p><template><br>    //1.判断变量的布尔值添加单个样式<br>    <div v-bind:class="isred ? red : blue">class与style样式</div><br>    //2.以对象的形式判断每个样式的布尔值，从而达到添加多个样式的效果<br>    <div :class="{red:true,size:true}">class与style样式</div><br>    //3.<br>    <table><br>        <tr v-for="n in name" :class="{10:'red',13:'size',25:'blue'}[n.age]"><br>             <td></td><br>             <td></td><br>             <td></td><br>        </tr><br>    </table><br></template></p>
-<p><script><br>    export default{<br>        data:{<br>            isred:true，<br>            name:[<br>                {name:’A’,age:10,class:101},<br>                {name:’B’,age:13,class:106},<br>                {name:’C’,age:13,class:201},<br>                {name:’D’,age:25,class:101}<br>            ]<br>        }<br>    }<br></script></p>
-<style>
-    .red{
-        color:red
-    }
-    .blue{
-        color:blue
-    }
-    .size{
-        font-size:30px
-    }
-</style>
-
-<p><code>`</code></p>
-<p>####<a href="">父子组件</a></p>
-<p>vuejs模板<br>简单版：<a href="https://github.com/vuejs-templates/webpack-simple" target="_blank" rel="noopener">https://github.com/vuejs-templates/webpack-simple</a><br>完整版：<a href="https://github.com/vuejs-templates/webpack" target="_blank" rel="noopener">https://github.com/vuejs-templates/webpack</a></p>
+        <p>​    </p>
 
       
 
@@ -278,7 +239,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/10/07/vuejs/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/22/Node-Express框架/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -292,9 +253,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/12/22/Node入门知识/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
   
-    <a href="/2018/10/07/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+  
+    <a href="/2018/10/22/HTML5+ - 窗口事件及原生dom事件/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -337,7 +307,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018 John Doe
+    		&copy; 2019 John Doe
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
